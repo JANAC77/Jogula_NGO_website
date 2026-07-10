@@ -1,0 +1,8 @@
+/* src/components/WhatsAppButton.css */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    /* Ensure it appears above other elements */
+}

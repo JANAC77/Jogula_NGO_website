@@ -1,0 +1,6 @@
+.cardsMain{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-gap: 25px;
+    height:50vh;
+}

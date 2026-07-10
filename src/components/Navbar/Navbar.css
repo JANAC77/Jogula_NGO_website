@@ -1,0 +1,41 @@
+.menuMain {
+    display: flex;
+    z-index: 99;
+}
+
+.mobileIcons {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .mobileIcons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .menuMain {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        /* left: 50px; */
+        right: 0px;
+        width: 100%;
+        top: 60px;
+        background-color: #ECECF9;
+        /* Changed to match the background */
+        padding: 20px 100px;
+    }
+
+    .menuMain.active {
+        display: flex;
+    }
+
+    .menuParent {
+        position: relative;
+    }
+}

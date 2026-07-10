@@ -1,0 +1,32 @@
+.Section3main{
+    /* width: 100%;
+    display: flex;
+    justify-content: center; */
+    /* border: 1px solid black; */
+}
+
+.Section3Child{
+    width:75%;
+    display: grid;
+    justify-content: space-between;
+    /* border: 4px solid green; */
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: 25% 25% 25% 25%; */
+}
+
+
+@media (max-width: 1000px){
+    .Section3Child {
+        width: 75%;
+        display: grid;
+        justify-content: space-between;
+        /* border: 4px solid green; */
+        gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-columns: 25% 25% 25% 25%; */
+    }
+    .para{
+        text-align: center;
+    }
+}
