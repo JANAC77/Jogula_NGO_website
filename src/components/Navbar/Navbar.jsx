@@ -84,12 +84,21 @@ const Navbar = () => {
               </div>
             </div>
 
-            <Link
-              to="/sponser-education"
-              className="border-2 border-brand-500 text-brand-500 hover:bg-brand-500 hover:text-white px-8 py-2 rounded-full uppercase font-bold text-xs tracking-wider transition-colors ml-4"
-            >
-              DONATE NOW
-            </Link>
+            <div className="flex items-center gap-4 ml-4">
+              <a
+                href="/Jogula_Project_Proposal.pdf"
+                download="Jogula_Foundation_Project_Proposal.pdf"
+                className="bg-white text-brand-500 hover:bg-gray-100 px-6 py-2 rounded-full uppercase font-bold text-xs tracking-wider transition-colors shadow-sm inline-block"
+              >
+                Download Proposal
+              </a>
+              <Link
+                to="/sponser-education"
+                className="border-2 border-brand-500 text-brand-500 hover:bg-brand-500 hover:text-white px-8 py-2 rounded-full uppercase font-bold text-xs tracking-wider transition-colors"
+              >
+                DONATE NOW
+              </Link>
+            </div>
           </div>
 
           {/* Main Navbar */}
@@ -216,6 +225,14 @@ const Navbar = () => {
                     <FiMail className="text-gray-400 text-xl" />
                     <span className="text-white font-bold text-sm">jogulafoundation@gmail.com</span>
                   </div>
+                  <a
+                    href="/Jogula_Project_Proposal.pdf"
+                    download="Jogula_Foundation_Project_Proposal.pdf"
+                    onClick={closeMenu}
+                    className="bg-white text-brand-500 text-center py-3 mt-4 rounded-full uppercase font-bold text-sm tracking-wider w-full shadow-sm block"
+                  >
+                    Download Proposal
+                  </a>
                   <Link
                     to="/sponser-education"
                     onClick={closeMenu}
